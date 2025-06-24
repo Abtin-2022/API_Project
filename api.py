@@ -11,4 +11,13 @@ data = {
 }
 response = requests.post(url, headers=headers, json=data)
 
-print(response.json()) # returns list of languages denoted by their two character ISO code
+print(response.json()) # returns list of languages denoted by their two character ISO code'''
+
+
+url = "https://api.adviceslip.com/advice"
+
+
+
+response = requests.get(url)
+
+print(response.json())
